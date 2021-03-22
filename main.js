@@ -6,7 +6,7 @@
 // ctx1.fill();
 
 class Rectangel{
-    contrustor(width,height){
+    constructor (width,height){
         this.width=width;
         this.height=height;
     }
@@ -22,6 +22,7 @@ class Rectangel{
         let posiY= y;
         ctx2.beginPath();
         ctx2.rect(posiX,posiY, this.width, this.height);
+
         ctx2.fill();
 
 
@@ -29,5 +30,10 @@ class Rectangel{
 }
 let rec2= new Rectangel(200,100);
 rec2.drawRectangle(10, 20);
+let rec3=new Rectangel(250,120)
+console.log(rec3.getArea());
+console.log(rec3.getPrimeter());
+
+
 
 
